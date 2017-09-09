@@ -1,9 +1,4 @@
 Create a new directory on your local machine. Use a text editor to create an HTML page (called "index.html") with separate CSS stylesheet. Your web page should have the following content:
 
-"cs4550 HW01 Fall 2017"
-Your name
 Your picture
-Your CCIS username
-A link to your Github account
-An ugly background image, specified in the external stylesheet.
 Readable text.
