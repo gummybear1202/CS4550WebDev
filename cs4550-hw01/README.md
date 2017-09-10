@@ -10,3 +10,5 @@ The URL of the github repo: https://github.com/gummybear1202/CS4550WebDev
 The domain name you registered: rosaline.im
 
 How far you got in the Codecademy tutorials.
+- HTML 33%
+- CSS 15%
