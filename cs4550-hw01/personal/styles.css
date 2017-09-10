@@ -1,18 +1,52 @@
+/*General*/
 body {
   /*set up background image, source is specified in README.txt*/
   background-image: url("images/peach.jpeg");
   background-repeat: repeat;
   background-size: 45%;
   background-attachment: fixed;
+  text-align: center;
+  font-family: Verdana;
 }
+
+/*Text*/
+p {
+  font-weight: lighter;
+}
+
+/*Text Color*/
 h1, h2{
   color: #9BD469;
-  font-family: Verdana;
 }
 a {
   /*coloring the link differently*/
   color: #FF8585;
 }
-.course {
+
+/*Header Specials*/
+.header {
+  /*setting the margin for header so there's no 'whitespace'*/
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
   font-weight: lighter;
+  color: white;
+  background-color: #FF8585;
+}
+
+/*Image Sizing*/
+.profile {
+  height: 75%;
+  width: 75%;
+}
+
+/*Left and Right Layout*/
+.left {
+  float: left;
+  width: 50%;
+  padding: 100px 0;
+}
+.right {
+  float: left;
+  width: 50%;
 }
