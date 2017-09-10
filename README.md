@@ -9,8 +9,3 @@ GitHub: https://github.com/gummybear1202/CS4550WebDev
   This is the directory for hw01.
 
   For my website contents, please navigate to this folder.
-
-  Deployed site URLs:
-- default site through domain name: http://rosaline.im
-- default site through www: http://www.rosaline.im
-- direct link to personal site: http://hw01.rosaline.im
