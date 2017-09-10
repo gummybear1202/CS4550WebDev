@@ -1,4 +1,0 @@
-Create a new directory on your local machine. Use a text editor to create an HTML page (called "index.html") with separate CSS stylesheet. Your web page should have the following content:
-
-Your picture
-Readable text.
