@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Design</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="user_design">
+      <h1>User First Design</h1>
+      <ol>
+        <p>(5 user stories and description of the process)</p>
+        <li> “As a returning user, I should be able to log in to my account”</li>
+        <p> Description:
+          <ul>
+            <li> Alice visits the blogging app</li>
+            <li> She inputs her username and password</li>
+            <li> She clicks on the login button</li>
+            <li> she is logged in successfully</li>
+            <li> she is brought to her account home page</li>
+          </ul>
+        </p>
+        <li> “As an user, I should be able to search other people by their
+              account names”</li>
+        <p> Description:
+          <ul>
+            <li> Carol visits the blogging app</li>
+            <li> She logs in with her username and password</li>
+            <li> She is brought to her account home page</li>
+            <li> She finds the search box and selects ‘users’ from the types
+                  of search</li>
+            <li> She inputs the username, Carol, which she wishes to find</li>
+            <li> She is brought to the accounts page with relevant names</li>
+            <li> She finds the right user she wants to find</li>
+          </ul>
+        </p>
+        <li> “As an user, I should be able to post comments” </li>
+        <p> Description:
+          <ul>
+            <li> David visits the blogging app</li>
+            <li> He logs in with his username and password</li>
+            <li> He is brought to his account home page</li>
+            <li> He sees a list of previous comments</li>
+            <li> He enters the text of his comments in the textfield</li>
+            <li> He clicks on ‘Post’</li>
+            <li> His new comment is now displaying on his home page at the top</li>
+          </ul>
+        </p>
+        <li> “As an user, I should be able to reset my password when
+              I forget and cannot login successfully” </li>
+        <p> Description:
+          <ul>
+  	         <li> Eddy visits the blogging app</li>
+  	         <li> Eddy enters the username and password</li>
+             <li> Eddy sees a message that whether his username or his password is wrong</li>
+  	         <li> Eddy knows his username is correct, but cannot remember his password</li>
+  	         <li> Eddy clicks on ‘Forget Password’</li>
+             <li> Eddy is brought to a new page</li>
+             <li> Eddy enters his email address and clicks ‘send’</li>
+             <li> Eddy receives an email and clicks on the link to reset his password</li>
+             <li> Eddy is brought to another page to enter a new password</li>
+             <li> Eddy enters his new passwords in both textfields (second to confirm)</li>
+             <li> Eddy clicks on ‘submit’</li>
+             <li> Eddy is now brought to the blogging app login page</li>
+             <li> Eddy logs in with his username and new password</li>
+          </ul>
+        </p>
+        <li> “As an user, I should be able to use # as hashtags
+              and @ to mention other users when commenting”</li>
+        <p> Description:
+          <ul>
+            <li> Frank visits the blogging app</li>
+            <li> Frank logs in with his username and password</li>
+            <li> Frank writes a comment with some hashtags and @Tom, who is another
+                  user he wants to mention</li>
+            <li> Frank clicks ‘Post’</li>
+            <li> Frank sees the new comment up top on his home page with the
+                  hashtag and mentions colored differently</li>
+            <li>  When Tom logs in, he receives a notification that he has been
+                  mentioned in Frank’s comment</li>
+          </ul>
+        </p>
+      </ol>
+    </div>
+    <div class="data_design">
+      <h1>Data First Design</h1>
+      <p>as for update, it should appear similar to the show page with message
+          <br />for delete, it should appear similar to the index page with message
+      </p>
+      <div class="resource_users">
+        <h2>Users</h2>
+        <div class="data">
+          <h3>Data</h3>
+          <ul>
+            <li>email</li>
+            <li>account name (apear to others)</li>
+            <li>password</li>
+            <li>list of comments posted</li>
+            <li>list of users (following)</li>
+            <li>list of users (follower)</li>
+          </ul>
+          <p>constraints: each user in the list should be unique (no repetition)</p>
+        </div>
+        <div class="application_pages">
+          <h3>Application Pages</h3>
+          <p>
+            new/create :
+            <li>have 3 editable textfields: email, account name, password</li>
+            <li>have a create button at the bottom to create the user</li>
+          </p>
+
+          <p>
+            show :
+            <li>has the user as a card</li>
+            <li>list of comments that are posted by the user and the users it’s
+              following</li>
+            <li>has a button for creating a new comment</li>
+          </p>
+          <p>
+            index :
+            <li>list of existing users</li>
+            <li>has columns for each data fields, but only references for
+              each list</li>
+          </p>
+        </div>
+      </div>
+      <div class="resource_comments">
+        <h2>Comments</h2>
+        <div class="data">
+          <h3>Data</h3>
+          <ul>
+            <li>text</li>
+            <li>list of special references (hashtag and mentions)</li>
+            <li>owner</li>
+            <li>date</li>
+          </ul>
+          <p>
+            constraints: a comment can have multiple references
+            (#dog #cat #….etc.); however, the list should not contain identical
+             data (#dog #dog shouldn’t be stored twice)
+          </p>
+        </div>
+        <div class="application_pages">
+          <h3>Application Pages</h3>
+          <p>
+            new/create :
+            <li>have an editable textfield to write the comment and a submit
+              button</li>
+          </p>
+          <p>
+            show :
+            <li>display the comment in text with time, date, and the owner</li>
+          </p>
+          <p>
+            index :
+            <li>have each comment separate as a card</li>
+          </p>
+
+        </div>
+      </div>
+      <div class="resource_special_references">
+        <h2>Special References</h2>
+        <div class="data">
+          <h3>Data</h3>
+          <ul>
+            <li>leading symbol ('#' or '@')</li>
+            <li>identification (a hashtag or a mention)</li>
+          </ul>
+          <p>constraints: other symbols should be ignored
+            (!, @, $, etc.) when detecting the leading symbol
+          </p>
+        </div>
+        <div class="application_pages">
+          <h3>Application Pages</h3>
+          <p>
+            new/create :
+            <li>ideally should be embedded in the comment’s form</li>
+          </p>
+          <p>
+            show :
+            <li>when a comment includes a special reference, show it by
+                colorcoding the identification differently</li>
+          </p>
+          <p>
+            index :
+            <li>columns include: 1) owner 2) identification 3) content that is
+              being identified as a hashtag or a mention</li>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
