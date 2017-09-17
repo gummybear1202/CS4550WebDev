@@ -100,6 +100,11 @@
             <li>list of users (follower)</li>
           </ul>
           <p>constraints: each user in the list should be unique (no repetition)</p>
+          <p>data types: lists would be pointers to seperate data tables. each user
+          should have a seperate data table for their own comments. When referring to other
+          people, it should be a pointer to a unique user, which points to their data table
+          and find their comments
+          </p>
         </div>
         <div class="application_pages">
           <h3>Application Pages</h3>
@@ -137,6 +142,11 @@
             constraints: a comment can have multiple references
             (#dog #cat #….etc.); however, the list should not contain identical
              data (#dog #dog shouldn’t be stored twice)
+          </p>
+          <p>
+            each special reference has its own data table (a column for the type and
+            a column for the content), then each comment's data table has a pointer that references
+            the special reference table.
           </p>
         </div>
         <div class="application_pages">
