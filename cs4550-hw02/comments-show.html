@@ -1,3 +1,4 @@
+<!-- unlike users-show, comments-index include others' comments that are related to the user -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,42 +34,33 @@
   </div>
 </nav>
 <div class="container-fluid">
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>USERNAME</th>
-        <th>RELATIONS</th>
-        <th>EMAIL</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>@crl2</td>
-        <td>following</td>
-        <td>carol@gmail.com</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>@appleFan</td>
-        <td>follower</td>
-        <td>applePear@gmail.com</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>@jackishere</td>
-        <td>following</td>
-        <td>jack@gmail.com</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>@bobbb</td>
-        <td>follower</td>
-        <td>bob333@gmail.com</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <br />
+
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <button type="back" class="btn border-dark btn-light text-dark">back</button>
+
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <div class="card border-primary mb-3">
+        <h5 class="card-header bg-light text-primary">crl2</h5>
+        <p class="card-body text-primary">
+          Another night with the girls. Can't imagine how I would live without you.
+           Love y'all! @appleFan @alice23 @23katie
+        </p>
+        <div class="col-md-auto">
+          <a class="btn btn-light text-primary" href="#" role="button">breakup</a>
+            <a class="btn btn-light text-primary" href="#" role="button">friendship</a>
+        </div>
+        <div class="card-footer bg-transparent text-secondary">12:07AM EST, 11/22/2017</div>
+
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Optional JavaScript -->

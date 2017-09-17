@@ -34,44 +34,48 @@
 </nav>
 <div class="container-fluid">
 
-  <br />
+      <br />
   <div class="row">
-    <div class="col-md-4">
-      <div class="card bg-light mb-3">
-        <h4 class="card-header border-white">crl2</h4>
-        <div class="card-body">
-          <h4 class="card-title">carol@gmail.com</h4>
-          <p class="card-text">Hey this is Carol, I love to chat and talk about
-            great food.</p>
+    <div class="col-md-12 mx-auto">
+      <h3>what to say?</h3>
+    </div>
+    <div class="col-md-6 mx-auto">
+      <form>
+        <div class="form-group">
+          <label class="sr-only" for="create_comment">what to say?</label>
+          <textarea type="comment" class="form-control"
+          id="create_comment" placeholder="comment" rows="3"></textarea>
+          <small id="comment_tip" class="form-text text-muted">
+            say everything you want. no limits.</small>
           </div>
-        </div>
-      </div>
-      <div class="col-md-8 ml-auto">
-        <div class="card border-primary mb-3">
-          <p class="card-body text-primary">
-            OMG I went to this really good brunch place and it's right on Huntington!
-            Guys give it a try! I recommend the chocolate pancakes :)
-          </p>
+          <div class="form-row">
+            <div class="col-md-6">
+              <label class="sr-only" for="add_mentions">username</label>
+              <div class="input-group mb-2 mb-sm-0">
+                <div class="input-group-addon">@</div>
+                <input type="text" class="form-control" id="add_mentions"
+                placeholder="username" />
 
-          <div class="col-md-auto">
-            <a class="btn btn-light text-primary" href="#" role="button">brunch</a>
-            <a class="btn btn-light text-primary" href="#" role="button">pancakes</a>
-            <a class="btn btn-light text-primary" href="#" role="button">yum</a>
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">+</button>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="sr-only" for="add_mentions">hashtag</label>
+              <div class="input-group mb-2 mb-sm-0">
+                <div class="input-group-addon">#</div>
+                <input type="text" class="form-control" id="add_mentions"
+                placeholder="hashtag" />
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">+</button>
+                </span>
+              </div>
+            </div>
           </div>
-          <div class="card-footer bg-transparent text-secondary">10:31AM EST, 03/20/2017</div>
-        </div>
-      </div>
-      <div class="col-md-8 ml-auto">
-        <div class="card border-primary mb-3">
-          <p class="card-body text-primary">
-            Got so much homework! Can't believe school just started...
-          </p>
-          <div class="col-md-auto">
-            <a class="btn btn-light text-primary" href="#" role="button">whatislife</a>
-            <a class="btn btn-light text-primary" href="#" role="button">school</a>
-          </div>
-          <div class="card-footer bg-transparent text-secondary">10:09PM EST, 09/20/2017</div>
-        </div>
+          <br />
+          <button type="create" class="btn btn-primary">post</button>
+        </form>
       </div>
     </div>
   </div>
